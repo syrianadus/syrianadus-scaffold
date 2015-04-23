@@ -1,0 +1,24 @@
+extends layout.jade
+block content
+    .jumbotron.animated.fadeIn
+        h1(style='text-align: center;') <%= navTitle %>
+    .animated.bounce(style='text-align:center')
+        .col-lg-4.col-sm-4.Aligner
+            img.img-circle(src='/images/Angular.png', style='width: 140px; height: 140px;')
+            h2 AngularJS
+            p
+                | Structural framework for dynamic web apps. It lets you use HTML as your template language and lets you extend HTML's syntax to express your application's components clearly and succinctly.
+            a.btn.btn-default(href='https://angularjs.org/', role='button') Learn More
+        .col-lg-4.col-sm-4.Aligner
+            img.img-circle(src='/images/twitter-bootstrap.jpg', style='width: 140px; height: 140px;')
+            h2 BootStrap
+            p
+                | Bootstrap is a free collection of tools for creating websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components.
+            a.btn.btn-default(href='http://getbootstrap.com/', role='button') Learn More
+        .col-lg-4.col-sm-4.Aligner
+            img.img-circle(src='/images/CSS3.jpg', style='width: 140px; height: 140px;')
+            h2 CSS3
+            p
+                | Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language, CSS3, the latest and greatest standard.
+            a.btn.btn-default(href='http://www.w3.org/Style/CSS/', role='button') Learn More
+

@@ -1,0 +1,31 @@
+doctype html
+html(ng-app='myApp')
+    head
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        title Angular app
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+        link(rel='stylesheet', href='http://cdn.bootcss.com/animate.css/3.2.6/animate.css')
+        link(rel='stylesheet', href='/css/style.css')
+    body.stripeMe
+        .navbar.navbar-default.navbar-fixed-top
+            .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                span.navbar-brand(href='#') <%= navTitle %>
+            ul.nav.navbar-nav.navbar-collapse.collapse
+                li
+                    a(href='index') Home
+                li
+                    a(href='#') Contact Us
+
+        block content
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.12/angular.js')
+        script(src=' https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.12/angular-sanitize.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+        script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+        script(src='/js/Chart.min.js')
+        script(src='/js/tc-angular-chartjs.js')
+        script(src='/js/app.js')
